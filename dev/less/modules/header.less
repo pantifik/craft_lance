@@ -1,15 +1,18 @@
 .siteHeader{
-  a{
-    color: @white;
-  }
-
+  box-shadow: 0 5px 10px -5px rgba(50, 50, 50, 0.75);
   &__contacts{
     background-color: @black;
+
+    a{
+      color: @white;
+      line-height: 2.375rem;
+    }
 
     .wrapper{
       padding-top: 15px;
       padding-bottom: 15px;
       display: flex;
+      align-items: center;
     }
   }
 
@@ -49,6 +52,7 @@
 
   &__item{
     display: inline-block;
+    vertical-align: center;
     margin-right: 10px;
 
     &:last-child{
@@ -58,7 +62,42 @@
 
   &__href{
     display: block;
+  }
+}
 
-    font-size: .75rem;
+.mainHeader{
+  background-color: @white;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    flex: 1 1 auto;
+
+    a{
+      font-family: 'SansSerif';
+      text-transform: uppercase;
+      color: @darkFont;
+      font-size: 1.875rem;
+      line-height: 3.75rem;
+    }
+  }
+}
+
+.nav{
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__href{
+    display: block;
+    padding: 0 1.25rem;
+
+    font-size: .875rem;
+    line-height: 2.43rem;
+    color: black;
   }
 }

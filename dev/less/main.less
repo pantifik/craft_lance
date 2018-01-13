@@ -23,10 +23,37 @@ a{
 }
 
 .wrapper{
-  width: 1200px;
+  max-width: 1200px;
 
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn{
+  display: block;
+  padding: 0 1.875rem;
+
+  font-family: @rr;
+  font-size: .625rem;
+  line-height: 1.875rem;
+  color: @dark;
+  text-transform: uppercase;
+
+  border: 1px solid #ececec;
+
+  &-green{
+    font-family: @rb;
+    color: @green;
+    text-transform: none;
+
+    border: 1px solid @green;
+    border-radius: 0.9375rem;
+  }
+
+  &:hover{
+    background-color: @green;
+    color: @white;
+  }
 }
 
 @import "modules/header";
