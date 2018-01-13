@@ -1,6 +1,8 @@
 @import 'utils/reset';
 @import 'utils/fontawesome/fontawesome';
 @import 'utils/fontawesome/fa-regular';
+@import 'utils/fontawesome/fa-brands';
+@import 'utils/fontawesome/fa-solid';
 @import 'utils/fonts';
 @import 'utils/vars';
 @import 'utils/mixins';
@@ -10,8 +12,14 @@
 }
 
 body{
-  font-family: 'RobotoRegular', sans-serif;
+  font-family: @rr;
   font-size: 16px;
+}
+
+a{
+  font-family: @rr;
+  text-decoration: none;
+  color: @dark;
 }
 
 .wrapper{
@@ -19,5 +27,6 @@ body{
 
   margin: 0 auto;
   padding: 0 15px;
-
 }
+
+@import "modules/header";

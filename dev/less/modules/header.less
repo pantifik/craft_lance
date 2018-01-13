@@ -1,0 +1,64 @@
+.siteHeader{
+  a{
+    color: @white;
+  }
+
+  &__contacts{
+    background-color: @black;
+
+    .wrapper{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+    }
+  }
+
+  &__phone,
+  &__email{
+    font-family: @rl;
+
+    &:before{
+      margin-right: 10px;
+    }
+  }
+
+  &__phone{
+    font-weight: 400;
+    margin-right: 35px;
+
+    &:before{
+      display: inline-block;
+      content:'\f095';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__email{
+    &:before{
+      content:'\f0e0';
+      font-family: 'Font Awesome 5 Free';
+      color: #ffffff;
+    }
+  }
+}
+
+.social{
+  flex: 1 1 auto;
+
+  &__item{
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__href{
+    display: block;
+
+    font-size: .75rem;
+  }
+}
