@@ -1,3 +1,75 @@
+.section{
+  .wrapper{
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+
+    text-align: center;
+  }
+
+  &__header{
+    font-family: @rr;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: #000000;
+  }
+
+  &__desc{
+    max-width: 775px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    font-family: @rl;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+.form {
+  font-family: @rl;
+  padding: 10px 0;
+
+  &__conteiner{
+    position: relative;
+
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 5rem;
+
+    font-size: .75rem;
+    line-height: 1.875rem;
+
+    border: 2px solid @darkMarch;
+    border-radius: .9375rem;
+
+    &::placeholder {
+      color: #cccccc;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-family: @rr;
+    font-size: .875rem;
+    line-height: 1.625rem;
+    color: @whiteFont;
+
+    border: 2px solid @darkMarch;
+    border-radius:  0 .8125rem .8125rem 0;
+
+    background-color: @darkMarch;
+
+    cursor: pointer;
+  }
+}
 
 //modules
 @import 'content/hotOffer';
