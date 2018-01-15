@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-body{
+html{
   font-family: @rr;
   font-size: 16px;
 }
@@ -25,6 +25,26 @@ a{
 input,
 button{
   outline: none;
+}
+
+ol{
+  counter-reset: myCounter;
+
+  font-family: @rl;
+  text-align: left;
+  color: @dark;
+
+  li{
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.75rem;
+
+    &:before {
+      counter-increment: myCounter;
+      content: counter(myCounter) '.';
+      margin-right: 10px;
+    }
+  }
 }
 
 .wrapper{
