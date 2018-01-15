@@ -164,6 +164,6 @@ gulp.task('watch', function () {
   gulp.watch(config.product.dest + '/**/*.html', browsersync.reload);
 });
 
-gulp.task('dev', gulp.series('clean', gulp.parallel('pug', 'less', 'js', 'svg', 'fonts')));
+gulp.task('dev', gulp.series('clean', gulp.parallel('pug', 'less', 'js', 'svg', 'fonts', 'img')));
 
 gulp.task('default', gulp.series('dev', gulp.parallel('browsersync', 'watch') ));
