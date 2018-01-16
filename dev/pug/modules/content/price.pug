@@ -8,12 +8,22 @@ section.section.price
       input(id='check2' type='radio' name='switch')
       label(for='check2') Community Edition
     .price__table
-      .item
-        h4.item__header basic
-        .item__price
+      .price__offer
+        h4 basic
+        .price__value
+          span $59
+          span per month
         ul
-          li 20 Keyword
-          li No Time Tracking
-          li 230 - Man Hour
-          li News Letter Available
+          li
+            i.fas.fa-check-circle
+            |20 Keyword
+          li
+            i.fas.fa-times
+            |No Time Tracking
+          li
+            i.fas.fa-check-circle
+            |230 - Man Hour
+          li
+            i.fas.fa-times
+            |News Letter Available
         a.btn(href='javascript:void(0);') purchase
