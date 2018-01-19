@@ -29,46 +29,26 @@
 }
 
 .form {
+
   font-family: @rl;
-  padding: 10px 0;
 
-  &__conteiner{
-    position: relative;
-
-    width: 290px;
-    margin: 0 auto;
+  &__container{
+    display: flex;
   }
 
   &__input {
-    width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 5rem;
-
-    font-size: .75rem;
-    line-height: 1.875rem;
-
-    border: 2px solid @darkMarch;
-    border-radius: .9375rem;
+    flex: 1 1 auto;
 
     &::placeholder {
       color: #cccccc;
+      font-style: italic;
     }
   }
 
   &__btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    font-family: @rr;
-    font-size: .875rem;
-    line-height: 1.625rem;
     color: @whiteFont;
 
-    border: 2px solid @darkMarch;
-    border-radius:  0 .8125rem .8125rem 0;
-
-    background-color: @darkMarch;
+    border: none;
 
     cursor: pointer;
   }
