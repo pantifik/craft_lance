@@ -26,65 +26,32 @@
     }
   }
 
-  &__selector{
-    display: flex;
-    justify-content: space-around;
-  }
+  .switcher{
 
-  &__btn{
-    font-family: @rl;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-    text-align: center;
-    border: none;
-    background-color: inherit;
+    &__container{
+      flex: 1 1 33.33%;
+    }
 
-    &:before{
-      content: '';
-
+    i{
       display: block;
-      width: 50px;
-      height: 50px;
+      box-sizing: content-box;
+      width: 3.75rem;
+
       margin: 0 auto;
+
+      font-size: 1rem;
+      line-height: 3.75rem;
+      color: @green;
 
       border: 1px solid @green;
       border-radius: 50%;
 
       background-color: @white;
-
-      font-family: "Font Awesome 5 Free";
-      font-size: 1rem;
-      line-height: 50px;
-      color: @green;
     }
 
-    &:hover{
-      &:before{
-        background-color: @green;
-        color: @whiteFont;
-      }
-    }
-
-    &-singIn{
-      &:before{
-        content: '\f2f6';
-
-        font-weight: 900;
-      }
-    }
-
-    &-complete{
-      &:before{
-        content: '\f0c1';
-
-        font-weight: 900;
-      }
-    }
-
-    &-singUp{
-      &:before{
-        content: '\f14a';
-      }
+    input[type='radio']:checked + i{
+      background-color: @green;
+      color: @whiteFont;
     }
   }
 }

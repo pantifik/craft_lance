@@ -8,7 +8,19 @@ section.section.community
           ol
             li User enters email address
             li Clicks on “Sign up for free”
-      .community__selector
-        button.community__btn.community__btn-singIn(type='button') Community Edition
-        button.community__btn.community__btn-complete(type='button') Complete Signup Process
-        button.community__btn.community__btn-singUp(type='button') Sign up
+      .community__selector.switcher
+        .switcher__container
+          label
+            input(type='radio' name='stage' checked)
+            i.fas.fa-sign-in-alt
+            |Community Edition
+        .switcher__container
+          label
+            input(type='radio' name='stage')
+            i.fas.fa-sign-in-alt
+            |Complete Signup Process
+        .switcher__container
+          label
+            input(type='radio' name='stage')
+            i.fas.fa-sign-in-alt
+            |Sign up
